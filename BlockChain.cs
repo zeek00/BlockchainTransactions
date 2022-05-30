@@ -10,7 +10,6 @@ namespace BlockchainTransactions
 {
     public class BlockChain
     {
-        //Form1 f = new Form1();
         public List<Block> listofBlocks = new List<Block>();
         public List<string> pendingTransactions = new List<string>();
        
@@ -25,10 +24,7 @@ namespace BlockchainTransactions
             get; set;
         }
 
-        //public Block _prevBlock
-        //{
-        //    get;set;
-        //}
+       
 
         public string _data
         {
@@ -49,19 +45,7 @@ namespace BlockchainTransactions
         public string _privateKey;
 
 
-        //public void _keyGeneration(byte[] data)
-        //{
-            
-        //    RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
-        //    string str = RSA.ToXmlString(true);
-        //    StringBuilder data = new StringBuilder();
-        //    for (int i = 0; i < bytes1; i++)
-        //    { data.Append("a"); }
-        //    byte[] buffer = Encoding.ASCII.GetBytes(data.ToString());
-        //    Console.WriteLine(str);
-
-
-        //}
+        
 
 
         
@@ -128,11 +112,7 @@ namespace BlockchainTransactions
 
         public void _addToChain(Block b, BlockChain block_chain)
         {
-            //string prevHash = this.lastBlock()._prevdatahash;
-            //if (prevHash != b._prevdatahash)
-            //{
-            //    return;
-            //}
+           
             this.listofBlocks.Add(b);
         }
 
